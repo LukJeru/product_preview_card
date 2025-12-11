@@ -1,6 +1,4 @@
-/*font*/
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/*colors*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +13,48 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #F2EAE2;
+  color: #1C232B;
+}
+
+.text b, h1 {
+  font-family: Fraunces, sans-serif;
+  font-weight: bold;
+  line-height: 100%;
+  font-size: 2rem;
+}
+
+h1 {
+  color: #1C232B;
+}
+
+h2 {
+  line-height: 120%;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+
+.text p {
+  line-height: 160%;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.text b {
+  color: #3D8168;
+}
+
+s {
+  line-height: 120%;
+  font-size: 0.8125rem;
+  font-weight: 300;
+}
+
+.add p {
+  line-height: 110%;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
 .card {
@@ -25,4 +65,53 @@ body {
   flex-direction: column;
   background-color: #FFFFFF;
   border-radius: 8px;
+  margin-top: 2rem;
+}
+
+.perfume-image {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 342px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.text {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding: 0px 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.add {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  display: flex;
+  gap: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #3D8168;
+  justify-content: center;
+}
+
+.add img {
+  height: 1.125rem;
+  width: 1.125rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer {
+  text-align: center;
+  margin: 1rem;
 }/*# sourceMappingURL=stylesheet.css.map */
