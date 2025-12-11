@@ -1,0 +1,38 @@
+/*font*/
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*colors*/
+$heading: #1C232B;
+$text: #1C232B;
+$background:#F2EAE2;
+$card: #FFFFFF;
+$big-price: #3D8168;
+$hover: #1A4032;
+
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: Montserrat, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background;
+}
+
+.card {
+  width: 350px;
+  max-width: 600px;
+  height: 750px;
+  display:flex;
+  flex-direction: column;
+  background-color: $card;
+  border-radius: 8px;
+}
+
