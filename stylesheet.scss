@@ -22,6 +22,7 @@ body {
   align-items: center;
   background-color: $background;
   color: $text;
+  position: relative;
 }
 
 
@@ -82,7 +83,7 @@ s {
   margin-top: 2rem;
 }
 
-.perfume-image {
+.mobile-image {
   max-width: 100%;
   object-fit: cover;
   height: 342px;
@@ -90,10 +91,20 @@ s {
   border-top-right-radius: 8px;
 }
 
+.desktop-image {
+  display: none;
+}
+
+.card-content {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
 .text {
   margin-top: 2rem;
   margin-bottom: 1.5rem;
-  padding: 0px 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -101,8 +112,6 @@ s {
 }
 
 .add {
-  margin-left: 2rem;
-  margin-right: 2rem;
   padding-top: 1.125rem;
   padding-bottom: 1.125rem;
   display: flex;
@@ -111,6 +120,12 @@ s {
   border-radius: 8px;
   background-color: $big-price;
   justify-content: center;
+}
+
+//active state
+.add:hover {
+  background-color: $hover;
+  cursor: pointer;
 }
 
 .add img {
@@ -127,4 +142,43 @@ s {
 footer {
   text-align: center;
   margin: 1rem;
+}
+
+//media queries
+
+@media screen and (min-width: 576px) {
+  .card {
+    width: 600px;
+    height: 456px;
+    flex-direction: row;
+  }
+
+  .mobile-image {
+    display: none;
+  }
+
+  .desktop-image {
+    display: block;
+    height: 456px;
+    width: 300px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .text {
+    width: 300px;
+  }
+
+  h1, .text p, .add {
+    width: 80%;
+  }
+
+  .add {
+    gap: .75rem;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
 }
